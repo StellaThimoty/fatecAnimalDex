@@ -1,2 +1,181 @@
 :root {
-    --bulma-primary: F6BF6C;
+    --primary: #F6BF6C;
+    --secondary: #D48300;
+    --text: #7A4A25;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dots {
+background-color: #F6BF6C;
+opacity: 1;
+background-image: radial-gradient(#D48300 20px, #F6BF6C 20px);
+background-size: 80px 80px;
+}
+
+section{ 
+    flex: 1;
+}
+
+section > div {
+    margin-right: 10px;
+}
+
+#animais {
+    width: 60%;
+}
+
+.lines {
+    background-color: #F6BF6C;
+    opacity: 0.8;
+    background: repeating-linear-gradient( 45deg, #D48300, #D48300 5px, #F6BF6C 5px, #F6BF6C 25px );
+}
+
+/* From Uiverse.io by Galahhad */ 
+.container {
+  border-radius: 1px;
+  padding: 50px 40px 20px 40px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #737373;
+  border: 1px solid rgb(219, 219, 219);
+  text-align: center;
+  background: white;
+}
+
+.container svg {
+  width: 16px;
+  height: auto;
+}
+
+.content__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.content__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.content__form label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-width: 268px;
+  height: 38px;
+  background: rgb(250, 250, 250);
+  border-radius: 3px;
+}
+
+
+a button {
+    display: flex;
+      align-items: center;
+  position: relative;
+  background: rgb(250, 250, 250);
+  border-radius: 3px;
+}
+
+.button-form{
+    background-color: #EEAB4D;
+    border: 2px solid #7A4A25;
+}
+
+.button-form{
+  background: #EEAB4D;
+  color: #7A4A25;
+  border-color: var(--text);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 7px 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.content__form span {
+  position: absolute;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  font-size: 12px;
+  left: 8px;
+  pointer-events: none;
+  transition: transform ease-out .1s
+}
+
+.content__form input {
+  width: 100%;
+  background: inherit;
+  border: 0;
+  outline: none;
+  padding: 9px 8px 7px 8px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #7A4A25;
+  border-radius: 8px;
+}
+
+.content__form input:valid+span {
+  transform: scale(calc(10 / 12)) translateY(-10px);
+}
+
+.content__form input:valid {
+  padding: 14px 0 2px 8px;
+  font-size: 12px;
+}
+
+.content__or-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  column-gap: 18px;
+  margin-top: 18px;
+  color: #7A4A25;
+}
+
+.content__or-text span:nth-child(3),
+.content__or-text span:nth-child(1) {
+  color: #7A4A25;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+}
+
+.content__forgot-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  row-gap: 21px;
+}
+
+.content__forgot-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #1A73E8;
+}
+
+
