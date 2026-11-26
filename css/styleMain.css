@@ -57,12 +57,13 @@ ul {
 
 
 .containerPost {
-    padding: 1rem 0.3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     color: #3B2A20;
     background-color: var(--primary);
     border-radius: 10px;
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -84,7 +85,7 @@ ol {
 
 #Main {
     flex: 3;
-    padding: 3rem rem 0px;
+    padding: 3rem 5rem 0px;
     border-left: 3px solid var(--text);
     border-right: 3px solid var(--text);
     background-color: #fff;
@@ -93,4 +94,18 @@ ol {
 #Right {
     margin-top: 2rem;
     width: fit-content;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.containerPost img {
+    margin-bottom: 1rem;
+}
+
+.last {
+    margin-left: ;
 }
